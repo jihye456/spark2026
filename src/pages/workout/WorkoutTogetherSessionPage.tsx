@@ -41,7 +41,7 @@ export default function WorkoutTogetherSessionPage() {
   }, [running])
 
   useEffect(() => {
-    const key = import.meta.env.VITE_KAKAO_MAP_APP_KEY
+    const key = import.meta.env.VITE_KAKAO_MAP_KEY
     const container = document.getElementById('together-map')
     if (!container || !key) return
 

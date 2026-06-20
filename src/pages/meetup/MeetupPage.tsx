@@ -113,7 +113,7 @@ export default function MeetupPage() {
 
   // ── 카카오 지도 초기화 ──
   useEffect(() => {
-    const appKey = import.meta.env.VITE_KAKAO_MAP_APP_KEY as string
+    const appKey = import.meta.env.VITE_KAKAO_MAP_KEY as string
 
     const initMap = () => {
       window.kakao.maps.load(() => {
