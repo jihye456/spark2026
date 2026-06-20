@@ -137,7 +137,7 @@ export default function MeetupDetailPage() {
           <p className="text-white text-3xl font-bold mb-5">{meetup.startTime} ~ {meetup.endTime}</p>
 
           <div className="flex flex-wrap gap-2 mb-5">
-            {meetup.tags.map((tag) => (
+            {meetup.tags.map((tag: string) => (
               <span key={tag} className="px-3 py-1.5 rounded-full border text-xs"
                 style={{ borderColor: 'rgba(255,255,255,0.2)', color: 'rgba(255,255,255,0.7)' }}>
                 {tag}
